@@ -18,9 +18,6 @@ app.use(cors());
 mongoose.connect(process.env.MONGOOSE_URL);
 
 
-app.use("/",(req,res)=>{
-    res.send("<h1>welcome</h1>");
-})
 
 app.use("/alumnitracking",routes,uploadroutes);
 const server=app.listen(process.env.PORT,()=> {
