@@ -1,0 +1,31 @@
+.dashboard-section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .dashboard-section img {
+    width: 100%;
+    max-width: 400px; /* Adjust this value as needed */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Optional: Adds rounded corners to the image */
+  }
+  
+  .dashboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #555;
+  }

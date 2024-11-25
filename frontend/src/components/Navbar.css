@@ -1,0 +1,138 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    position: relative;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 1rem;
+  }
+  
+  .navbar-title {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  
+  .navbar-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  
+  .navbar-link:hover {
+    color: var(--primary-color);
+    background-color: #f39c12;
+    transform: scale(1.1);
+  }
+  
+  .navbar-link:hover::after {
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hamburger .bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+  }
+  
+  .hamburger:hover .bar {
+    background-color: #f39c12;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-right {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--primary-color);
+    }
+  
+    .navbar-right.active {
+      display: flex;
+    }
+  
+    .navbar-link {
+      margin: 0.5rem 0;
+      width: 100%;
+      padding: 1rem;
+      border: none;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .hamburger.toggle .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger.toggle .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.toggle .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }

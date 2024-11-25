@@ -1,0 +1,103 @@
+/* src/components/CreateJob.css */
+.create-job-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .create-job-page form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-job-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .create-job-page label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .create-job-page input,
+  .create-job-page textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .create-job-page input[type="checkbox"] {
+    width: auto;
+    margin-left: 0;
+  }
+  
+  .create-job-page button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-job-page button:hover {
+    background-color: #555;
+  }
+  
+  /* src/components/Jobs.css */
+  .jobs-page {
+    padding: 20px;
+  }
+  
+  .jobs-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .job-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .jobs-page .create-job-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .jobs-page .create-job-button:hover {
+    background-color: #555;
+  }

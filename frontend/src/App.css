@@ -1,0 +1,518 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0.5rem;
+  border-radius: 4px;
+}
+
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.navbar-link:hover {
+  color: #333;
+  background-color: #ffd700;
+  transform: scale(1.1);
+}
+
+.navbar-link:hover::after {
+  background-color: #333;
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar-link:hover::before {
+  opacity: 1;
+  bottom: -35px;
+}
+
+/* banner css */
+.banner-slider {
+  width: 100%;
+  margin-top: 0px; /* Adjust spacing below navbar */
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 500px;
+}
+/* about section */
+.about-container {
+  display: flex;
+  /* flex-direction: row; Arrange items horizontally */
+  align-items: stretch; /* Stretch items to match height */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.about-info {
+  flex: 1; /* Take up remaining space */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.college-photo {
+  width: auto; /* Set width to 50% to occupy half of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.college-photo img {
+  max-width: 100%; /* Ensure the image fits within its container */
+  max-height: 100%; /* Ensure the image fits within its container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px; /* Add rounded corners if desired */
+}
+
+/* StudentAchievement.css */
+/* StudentAchievement.css */
+
+.student-achievement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.student-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h3 {
+  margin-bottom: 5px;
+}
+
+/* StudentAchievement.css */
+
+.achievement-section {
+  background-color: #ccc; /* Example background color */
+  padding: 10px;
+  /* margin: 20px; */
+}
+.achievement-section h2 {
+  text-align: center;
+  /* background-color: lavender; */
+  padding: 0;
+}
+
+.achievements-container {
+  display: flex;
+  /* flex-wrap: wrap;
+  gap: 20px; */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .achievements-container {
+    flex-direction: column;
+  }
+}
+
+/* Achievements.css */
+/* Achievements.css */
+
+.achievement {
+  /* display: flex; */
+  align-items: center; /* Align items at the top */
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjust width as needed */
+  margin: 10px; /* Margin between achievements */
+}
+
+@media (max-width: 768px) {
+  .achievement {
+    width: 100%; /* Full width on smaller screens */
+    margin-right: 0; /* No margin on smaller screens */
+    margin-bottom: 20px; /* Add margin-bottom for spacing */
+  }
+}
+
+.circle {
+  width: 150px; /* Larger circle size */
+  height: 150px; /* Larger circle size */
+  border-radius: 50%;
+  overflow: hidden;
+  /* margin-left: 20px; */
+  /* justify-content: center; */
+  border: 2px solid #333;
+}
+
+.student-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.achievement-details {
+  /* flex:  */
+  margin-top: 10px; /* Margin between image and details */
+}
+
+.achievement-details h3 {
+  margin-bottom: 5px;
+}
+
+/* ProjectInfo.css */
+
+.project-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+  margin-top: 20px;
+  /* margin: 20px; Adjust margin as needed */
+}
+
+.project-info,
+.social-media-links {
+  flex: 1;
+  margin: 10px 20px; /* Adjust margin for spacing */
+}
+
+.project-info h2,
+.social-media-links h2 {
+  margin-bottom: 15px;
+}
+
+.project-info p {
+  line-height: 1.6;
+}
+
+.social-media-links .icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media-links .icons a img {
+  width: 40px; /* Adjust icon size */
+  height: 40px;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-media-links .icons a img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Team.css */
+
+.team-container {
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+  text-align: center; /* Center the text */
+}
+
+.team-container h2 {
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Adjust width as needed */
+  text-align: center; /* Center the text */
+}
+
+.team-member h3 {
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a img {
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-links a img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Gallery.css */
+
+.gallery-container {
+  padding: 20px;
+  background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+.gallery-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the photos */
+}
+
+.gallery-item {
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+/* footer css */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* alumni space  css */
+
+.alumni-space-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-info {
+  margin-bottom: 30px;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section {
+  width: 45%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h3 {
+  margin-bottom: 15px;
+}
+
+.section p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.signup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #555;
+}
+
+
+/* alumni signup css */
+.signup-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container h2 {
+  margin-bottom: 20px;
+}
+
+.signup-container input,
+.signup-container textarea,
+.signup-container button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background-color: #555;
+}
+
+
+
+/* login css */
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #555;
+}
+
+
+* {
+  margin: 0;
+}
+
+.App {
+  background-color: #dddedd;
+  /* background-color: #1c2429; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-dark {
+  /* background-color: #dddedd; */
+  background-color: #1c2429;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

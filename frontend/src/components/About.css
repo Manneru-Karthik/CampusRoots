@@ -1,0 +1,63 @@
+.about-container {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .about-container:hover {
+    box-shadow: 0 12px 24px var(--hover-color);
+  }
+  
+  .about-info {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .about-info h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+  
+  .about-info p {
+    line-height: 1.8;
+    /* color: var(--primary-color); */
+    background-color: var(--hover-color);
+    padding: 13px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .about-info p:hover {
+    transform: scale(1.04);
+    background-color: var(--accent-color);
+    box-shadow: 0 8px 16px var(--hover-color);
+  }
+  
+  .college-photo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .college-photo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .college-photo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px var(--hover-color);
+  }
