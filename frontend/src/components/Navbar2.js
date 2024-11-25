@@ -36,12 +36,17 @@ const Navbar2 = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/" className="navbar-logo">
-          <img src="/path-to-logo.png" alt="Logo" className="navbar-logo" />
-        </Link>
-        <Link to="/home" className="navbar-title">
-          XAlumni
-        </Link>
+        
+        {role === "admin" ? (
+          <Link to="/adminhome" className="navbar-title">
+          CampusRoots
+          </Link>
+        ) : (
+          <Link to="/home" className="navbar-title">
+            CampusRoots
+          </Link>
+        )}
+
       </div>
       <div className={`navbar-right ${isMenuOpen ? "active" : ""}`}>
       {role === "admin" ? (

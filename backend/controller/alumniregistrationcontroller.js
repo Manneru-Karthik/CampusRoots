@@ -54,7 +54,6 @@ const alumniregistration = async (req, res,next) => {
             expertise,currentRole,achievements,
             verificationToken,
             verificationTokenExpires
-
         };
         const encodedToken = jwt.sign(tempUser, "JWT_SECRET", { expiresIn: '5m' });
 

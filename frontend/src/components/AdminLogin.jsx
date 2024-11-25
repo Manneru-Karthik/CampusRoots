@@ -74,8 +74,6 @@ const AdminLogin = () => {
         />
         <input type="hidden" name="role" value="admin" />
 
-        <button onClick={() => navigate("/adminsignup")}>Sign Up</button>
-
         <button type="submit">Login</button>
       </form>
     </div>
