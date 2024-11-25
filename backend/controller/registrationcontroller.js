@@ -59,7 +59,7 @@ const studentregistration = async (req, res,next) => {
         
         const encodedToken = jwt.sign(tempUser, "JWT_SECRET", { expiresIn: '5m' });
        
-        const verificationLink = `http://localhost:3000/verifystudentemail?token=${encodedToken}`;
+        const verificationLink = `https://campusroots-frontend.onrender.com/verifystudentemail?token=${encodedToken}`;
         
         const subject="Email verification";
         const text = `Dear ${username}, please verify your email by clicking on the following link: ${verificationLink}. The link will expire in 5 minutes.`;

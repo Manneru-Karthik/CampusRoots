@@ -49,7 +49,7 @@ const AdminHome = () => {
         <h2>Welcome Admin</h2>
         <div className="button-group">
           <button onClick={() => fetchData("students")}>View Students</button>
-          <button onClick={() => fetchData("admins")}>View Admins</button>
+          <button onClick={() => fetchData("admins")}>View ALumni</button>
         </div>
 
         <div className="data-display">
@@ -57,7 +57,7 @@ const AdminHome = () => {
             {viewType === "students"
               ? "Student Details"
               : viewType === "admins"
-              ? "Admin Details"
+              ? "Alumni Details"
               : "Select a category to view details"}
           </h3>
           {data.length > 0 ? (

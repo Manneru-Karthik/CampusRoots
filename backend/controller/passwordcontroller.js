@@ -32,7 +32,7 @@ const forgotPassword= async(req,res) => {
 
         await user.save();
         const username= user.username;
-        const resetUrl=`http://localhost:5000/alumnitracking/resetPassword/${role}/${resetToken}`;
+        const resetUrl=`https://campusroots.onrender.com/alumnitracking/resetPassword/${role}/${resetToken}`;
           let subject="Reset your password";
           let text=`Dear ${username} click on the below link to reset your password \n\n ${resetUrl}`;
           try{
