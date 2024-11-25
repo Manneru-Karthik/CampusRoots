@@ -35,11 +35,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <Link to="/" className="navbar-logo">
-          <img src="/path-to-logo.png" alt="Logo" className="navbar-logo" />
-        </Link>
+       
         <Link to="/" className="navbar-title">
-          XAlumni
+         CampusRoots
         </Link>
       </div>
       <div className={`navbar-right ${isMenuOpen ? "active" : ""}`}>
