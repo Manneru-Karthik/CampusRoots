@@ -37,15 +37,9 @@ const Navbar2 = () => {
     <nav className="navbar">
       <div className="navbar-left">
         
-        {role === "admin" ? (
-          <Link to="/adminhome" className="navbar-title">
+       
           CampusRoots
-          </Link>
-        ) : (
-          <Link to="/home" className="navbar-title">
-            CampusRoots
-          </Link>
-        )}
+         
 
       </div>
       <div className={`navbar-right ${isMenuOpen ? "active" : ""}`}>
