@@ -11,7 +11,7 @@ const JobList = () => {
   useEffect(() => {
     const fetchJobPosts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/alumnitracking/getjobs"); // Update with your API endpoint
+        const response = await fetch("https://campusroots.onrender.com/alumnitracking/getjobs"); // Update with your API endpoint
         const data = await response.json();
         setJobPosts(data || []); // Ensure it sets an empty array if data is undefined
       } catch (err) {

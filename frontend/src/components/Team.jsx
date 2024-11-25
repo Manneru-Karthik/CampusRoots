@@ -12,14 +12,14 @@ const Team = () => {
           {/* <p>Project Contribution: Frontend Development</p> */}
           <div className="social-links">
             <a
-              href="https://linkedin.com/in/johndoe"
+              href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={linkedin} alt="LinkedIn" />
             </a>
             <a
-              href="https://github.com/johndoe"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -33,14 +33,14 @@ const Team = () => {
           {/* <p>Project Contribution: Backend Development</p> */}
           <div className="social-links">
             <a
-              href="https://linkedin.com/in/janesmith"
+              href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={linkedin} alt="LinkedIn" />
             </a>
             <a
-              href="https://github.com/janesmith"
+              href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -55,14 +55,14 @@ const Team = () => {
           {/* <p>Project Contribution: Backend Development</p> */}
           <div className="social-links">
             <a
-              href="https://linkedin.com/in/janesmith"
+              href="https://linkedin.com/in"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={linkedin} alt="LinkedIn" />
             </a>
             <a
-              href="https://github.com/janesmith"
+              href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -76,14 +76,14 @@ const Team = () => {
           {/* <p>Project Contribution: Backend Development</p> */}
           <div className="social-links">
             <a
-              href="https://linkedin.com/in/janesmith"
+              href="https://linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={linkedin} alt="LinkedIn" />
             </a>
             <a
-              href="https://github.com/janesmith"
+              href="https://github.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -24,7 +24,7 @@ const StudentLogin = () => {
     try {
       const { gmail, password, role } = formData;
       const response = await fetch(
-        "http://localhost:5000/alumnitracking/login",
+        "https://campusroots.onrender.com/alumnitracking/login",
         {
           method: "POST",
           headers: {

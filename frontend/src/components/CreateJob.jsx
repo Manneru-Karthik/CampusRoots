@@ -53,7 +53,7 @@ const CreateJob = () => {
     }));
 
     try {
-      const response = await fetch("http://localhost:5000/alumnitracking/postjobs", {
+      const response = await fetch("https://campusroots.onrender.com/alumnitracking/postjobs", {
         method: "POST",
         body: data, // No need to set Content-Type with FormData
       });

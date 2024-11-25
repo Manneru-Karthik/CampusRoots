@@ -10,8 +10,8 @@ const AdminHome = () => {
     try {
       const endpoint =
         type === "students"
-          ? "http://localhost:5000/alumnitracking/students"
-          : "http://localhost:5000/alumnitracking/alumnis";
+          ? "https://campusroots.onrender.com/alumnitracking/students"
+          : "https://campusroots.onrender.com/alumnitracking/alumnis";
 
       const response = await fetch(endpoint, {
         method: "GET",

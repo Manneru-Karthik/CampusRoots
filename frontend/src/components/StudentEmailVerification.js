@@ -21,7 +21,7 @@ const StudentEmailVerification = () => {
       console.log("Token:", token);
 
       try {
-        const response = await fetch(`http://localhost:5000/alumnitracking/verifystudentemail?token=${token}`, {
+        const response = await fetch(`https://campusroots.onrender.com/alumnitracking/verifystudentemail?token=${token}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

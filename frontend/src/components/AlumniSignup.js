@@ -26,7 +26,7 @@ const AlumniSignup = () => {
     try {
       const { username, gmail, year, password, confirmPassword,expertise,currentRole,achievements } = formData;
       const response = await fetch(
-        "http://localhost:5000/alumnitracking/alumniregistration",
+        "https://campusroots.onrender.com/alumnitracking/alumniregistration",
         {
           method: "POST",
           headers: {

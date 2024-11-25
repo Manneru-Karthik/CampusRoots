@@ -18,7 +18,7 @@ const Home = () => {
         const token = sessionStorage.getItem("token"); // Retrieve token from localStorage
         
         try {
-          const response = await fetch("http://localhost:5000/alumnitracking/home", {
+          const response = await fetch("https://campusroots.onrender.com/alumnitracking/home", {
             method: "GET",
             headers: {
               "Authorization": `Bearer ${token}`,

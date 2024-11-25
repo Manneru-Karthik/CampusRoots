@@ -12,7 +12,7 @@ const Events = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch("http://localhost:5000/alumnitracking/getevents");
+        const response = await fetch("https://campusroots.onrender.com/alumnitracking/getevents");
         const data = await response.json();
 
         if (Array.isArray(data)) {

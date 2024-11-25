@@ -58,7 +58,7 @@ const CreateEvent = () => {
     );
 
     try {
-      const response = await fetch("http://localhost:5000/alumnitracking/postevents", {
+      const response = await fetch("https://campusroots.onrender.com/alumnitracking/postevents", {
         method: "POST",
         body: data,
       });

@@ -24,7 +24,7 @@ const AdminSignup = () => {
     try {
       const { username, password } = formData;
       const response = await fetch(
-        "http://localhost:5000/alumnitracking/admin/signup",
+        "https://campusroots.onrender.com/alumnitracking/admin/signup",
         {
           method: "POST",
           headers: {
